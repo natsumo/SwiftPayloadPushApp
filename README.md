@@ -242,7 +242,7 @@ _アプリ非起動時に受信する場合_
 ```swift
 // MARK: アプリが起動されたときにプッシュ通知の情報（ペイロード）からデータを取得する
 if let payload = launchOptions?[.remoteNotification] as? [String: AnyObject] {
-    payloadData = payload.map{(key, value) in "\"\(key)\":\"\(value)\""}.joined(separator: "\n")
+   let  payloadData = payload.map{(key, value) in "\"\(key)\":\"\(value)\""}.joined(separator: "\n")
 
     // 以下省略
 }
@@ -255,7 +255,7 @@ _アプリ起動時に受信する場合_
 // MARK: アプリが起動中にプッシュ通知を受信したとき、プッシュ通知の情報（ペイロード）からデータを取得する
 func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
     
-    payloadData = userInfo.map{(key, value) in "\"\(key)\":\"\(value)\""}.joined(separator: "\n")
+    let payloadData = userInfo.map{(key, value) in "\"\(key)\":\"\(value)\""}.joined(separator: "\n")
 
     // 以下省略    
 }

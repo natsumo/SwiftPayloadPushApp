@@ -142,7 +142,7 @@ SDKのバージョンアップを行う場合は[こちら（参考：SDKのア�
             "title" : "title"
         },
         "content-available" : 1,
-        "sound" : default
+        "sound" : "default"
     },
     "com.nifcloud.mbaas.PushId" : "********",
     "userSettingJson" : "test",

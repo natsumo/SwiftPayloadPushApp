@@ -55,7 +55,7 @@ SDKのバージョンアップを行う場合は[こちら（参考：SDKのア�
 
 ### 2. サンプルプロジェクトのダウンロード
 * 下記リンクをクリックしてプロジェクトをダウンロードします
-  * https://github.com/NIFCLOUD-mbaas/SwiftPayloadPushApp/archive/master.zip
+  * https://github.com/natsumo/SwiftPayloadPushApp/archive/refs/heads/main.zip
 
 ### 3. Xcodeでプロジェクトを起動
 
